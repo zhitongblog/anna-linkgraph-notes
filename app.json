@@ -1,6 +1,8 @@
 {
+  "slug": "linkgraph-notes",
+  "version": "1.0.0",
   "name": "LinkGraph Notes",
-  "tagline": "AI-native Markdown vault & interactive knowledge graph — local-first Markdown vault & interactive graph inside Anna AI OS.",
-  "description": "Turn scattered Markdown notes into a connected, searchable knowledge graph inside Anna AI OS. Features bidirectional [[wiki-links]], interactive canvas graph navigation, deterministic orphan/broken-link diagnostics, one-click unlinked mention discovery, persistent per-user vault storage, and built-in AI summaries & action-item extraction with zero external API keys required.",
+  "tagline": "AI-native Markdown vault & interactive knowledge graph inside Anna AI OS.",
+  "description": "Turn scattered Markdown notes into a connected, searchable knowledge graph inside Anna AI OS. Features bidirectional [[wiki-links]], interactive canvas graph navigation, deterministic orphan/broken-link diagnostics, one-click unlinked mention discovery, cross-device Anna APS storage, and grounded AI vault Q&A & brief synthesis with zero external API keys required.",
   "category": "productivity"
 }
