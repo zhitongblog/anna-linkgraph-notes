@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkGraph Notes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot"></span>
+        <strong>LinkGraph Notes</strong>
+        <span id="host-badge" class="badge">Connecting…</span>
+      </div>
+      <div class="toolbar">
+        <button id="btn-new" class="btn primary">+ New Note</button>
+        <button id="btn-delete" class="btn">Delete</button>
+        <button id="btn-ai-summarize" class="btn">✨ AI Brief</button>
+        <button id="btn-ai-links" class="btn">🔗 AI Link Ideas</button>
+        <button id="btn-export" class="btn">Export MD</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="pane left">
+        <input id="search-input" class="search" placeholder="Search notes or #tags…" />
+        <div id="note-list" class="note-list"></div>
+        <div class="stats-footer" id="vault-stats">Loading vault…</div>
+      </aside>
+
+      <section class="pane center">
+        <input id="note-title" class="title-input" placeholder="Note title…" />
+        <textarea id="note-editor" class="editor" placeholder="Write Markdown with [[wiki-links]], #tags, and - [ ] tasks…"></textarea>
+        <div class="bottom-bar">
+          <div id="backlinks-bar" class="chips"></div>
+          <div id="suggest-bar" class="chips"></div>
+        </div>
+      </section>
+
+      <aside class="pane right">
+        <div class="panel-head">
+          <span>Interactive Knowledge Graph</span>
+          <span id="health-pill" class="pill">Health —</span>
+        </div>
+        <canvas id="graph-canvas" width="320" height="220"></canvas>
+
+        <div class="panel-head" style="margin-top: 10px;">
+          <span>Diagnostics &amp; Open Tasks</span>
+        </div>
+        <div id="diag-panel" class="diag-panel"></div>
+
+        <div class="panel-head" style="margin-top: 10px;">
+          <span>Ask Vault (AI Q&amp;A / Output)</span>
+        </div>
+        <div style="display:flex;gap:6px;margin-bottom:6px;">
+          <input id="ask-input" class="search" style="margin:0;flex:1;" placeholder="Ask across all notes…" />
+          <button id="btn-ask" class="btn primary">Ask</button>
+        </div>
+        <pre id="output-box" class="output-box">Click any node in the graph, edit notes with [[wiki-links]], ask a question across your vault, or press ✨ AI Brief.</pre>
+      </aside>
+    </main>
+  </body>
+</html>

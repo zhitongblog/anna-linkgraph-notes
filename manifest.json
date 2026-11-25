@@ -1,0 +1,34 @@
+{
+  "schema": 4,
+  "required_executas": [],
+  "tags": [
+    "markdown",
+    "knowledge-graph",
+    "notes",
+    "pkm",
+    "productivity"
+  ],
+  "system_prompt_addendum": "You have LinkGraph Notes installed. When the user wants to organize Markdown notes, visualize bidirectional [[wiki-links]], find orphan notes or broken links, extract open action items, or run grounded Q&A across their personal knowledge vault, open the LinkGraph Notes window.",
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": []
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "LinkGraph Notes",
+        "default": true,
+        "default_size": { "w": 1120, "h": 720 },
+        "min_size": { "w": 700, "h": 480 },
+        "resizable": true,
+        "movable": true,
+        "single_instance": true,
+        "summary_template": "LinkGraph Notes workspace with persistent Markdown vault, interactive knowledge graph, deterministic link diagnostics, and grounded AI vault Q&A."
+      }
+    ],
+    "csp_overrides": {},
+    "state_merge": "last_writer_wins"
+  }
+}
